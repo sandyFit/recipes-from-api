@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dark {
+    background: #120736;
+    color: aliceblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+/* ============NAVBAR============== */
+.nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 10rem 2rem;
+    background-color: #f6703c;
+    width: 100vw;
+    
+}   
+
+.nav-box h2 a {
+    color: #f6eec2;
+    text-decoration: none;
+    
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+    
+}
+
+.links li {
+    list-style: none;
+    
+}
+
+.links li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #f6eec2;
+    font-size: 1.2rem;
+}
+
+.links li a:hover {
+    text-decoration: underline;
+}
+
+.nav-btn {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #fbf1b8;
+    background-color: transparent;
+    border: 1px solid #fbf1b8;
+}
+
+.nav-btn:hover {
+    background-color: #ff8251;
+    cursor: pointer;
+}
+
+/* =============SEARCH BAR============ */
+
+form {
+    margin-top: 2rem;
+}
+
+form input {
+    width: 30rem;
+    padding: .6rem;
+    background-color: #fae1d7;
+    border: none;
+}
+
+form input::placeholder {
+    color: #f6703c;
+    font-size: 1rem;
+}
+
+
+.search-btn {
+    padding: 0.6rem;
+    cursor: pointer;
+    background-color: #ff8251;
+    border: none;
+}
+
+/* ====================CARDS===================== */
+
+.cards-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card {
+    width: 18rem;
+    height: 30rem;
+    padding: 2rem;
+    border: 2px solid #f6703c;
+    border-radius: 10px;
+    margin-top: 3rem;
+
+}
