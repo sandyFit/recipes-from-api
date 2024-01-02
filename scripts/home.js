@@ -1,11 +1,17 @@
 const themeBtn = document.querySelector('.nav-btn');
 const body = document.querySelector('body');
+const viewMoreBtn = document.querySelector('.viewMore-btn');
 
 
 const changeTheme = () => {
     body.classList.toggle('dark');
 }
 themeBtn.addEventListener('click', changeTheme);
+
+// ========FUNCTION FOR THE VIEW MORE BUTTON ==============
+const viewMore = (id) => {
+    window.location.href = `detail.html?id=${id}`;
+}
 
 
 // ==================API CALL===================
@@ -37,6 +43,7 @@ const getAllRecipes = async() => {
                     <h3>${recipe.slug}</h3>
                     <img class='card-img' src='${recipe.thumbnail_url}' alt="pic" />
                     <p>${recipe.description}</p>
+                    <button class="viewMore-btn" onclick="viewMore(${recipe.id})">View More</button>
                 </div>                                  
             `
         });

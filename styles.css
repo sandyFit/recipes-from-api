@@ -134,3 +134,17 @@ form input::placeholder {
     height: 200px;
     border: 2px solid #f6703c; 
 }
+
+.viewMore-btn {
+    padding: .6rem 2rem;
+    background-color: #f6703c;
+    border: none;
+    color: #f6eec2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.viewMore-btn:hover {
+    background-color: #ff8251;
+    cursor: pointer;
+}
