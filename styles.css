@@ -148,3 +148,30 @@ form input::placeholder {
     background-color: #ff8251;
     cursor: pointer;
 }
+
+.detail-card {
+    width: 80rem;
+    height: 45rem;
+    padding: 0 1rem;
+}
+
+.detail-card-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.detail-img {
+    width: 500px;
+    height: 500px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+    gap: 1rem;
+}
